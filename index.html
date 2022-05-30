@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/877d2cecdc.js" crossorigin="anonymous"></script>
+    <!-- link to css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>WEB2_PETA</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Logo</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#time-picker">Time-picker</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- start of content -->
+    <div class="container">
+        <h3 class="center-align">Morva, Nathaniel Carlo</h3>
+        <!-- typography -->
+        <div class="typography" id="typography">
+            <header class="center-align">Typography</header>
+            <header>This is a header</header>
+            <blockquote>This is a blockquote</blockquote>
+            <p class="flow-text">This is a paragraph with a class of "flow-text"</p>
+        </div>
+        <!-- buttons -->
+        <div class="buttons" id="buttons">
+            <header class="center-align">Buttons</header>
+            <a class="waves-effect waves-light btn">Raised Button</a>
+            <header class="floating">Floating Button</header>
+            <a class="btn-floating btn-large waves-effect waves-light red"><i class="fa-solid fa-plus"></i></a>
+            <br>
+            <a class="waves-effect waves-teal btn-flat">Flat Button</a>
+            <br>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+            <a class="waves-effect waves-light btn-large">Large Button</a>
+            <a class="waves-effect waves-light btn-small">Small Button</a>
+            <a class="btn-large disabled">Disabled Button</a>
+        </div>
+        <!-- time-picker -->
+        <div class="time-picker" id="time-picker">
+            <header class="center-align">Time Picker</header>
+            <div class="input-field">
+                <input type="text" id="time" class="timepicker" placeholder="    Click me!">
+                <label for="time">Time-picker</label>
+            </div>
+        </div>
+        <!-- end of content -->
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        const timer = document.getElementById('time');
+
+        M.Timepicker.init(timer, {});
+    </script>
+</body>
+
+</html>
